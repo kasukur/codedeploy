@@ -4,9 +4,9 @@
 
 ---
 
-Following the presentation, this is a demo of a simple pipeline using CodeCommit repository
+As a follow up to the presentation, I would like to present a demo of a simple pipeline using CodeCommit repository.
 
-> We are going to use `us-east-1` region for this workshop
+> We are going to use `us-east-1` region for this demo.
 
 
 ![Pipeline-Architecture](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rjg9dx4g9ayqc08k81uf.png)
@@ -66,7 +66,7 @@ Following the presentation, this is a demo of a simple pipeline using CodeCommit
 
 ### Step 2. Create IAM Roles
 
-We are going to create two IAM Roles, One for EC2 and the other one for Code Deploy
+We are going to create two IAM Roles: one for EC2 and the other one for Code Deploy
 
 **EC2InstanceRole**
 
@@ -123,7 +123,7 @@ warning: You appear to have cloned an empty repository.
     cp -rf codedeploy/MyDemoRepo/* ~/codedeploy/MyDemoRepo/.
     ```
 
-2. Commit and push the files to CodeCommit `MyDemoRepo` repostory
+2. Commit and push the files to CodeCommit `MyDemoRepo` repository
 
     ```
     cd MyDemoRepo
@@ -134,7 +134,7 @@ warning: You appear to have cloned an empty repository.
 
 > Note: I have used the code from [SampleApp_Linux.zip](https://docs.aws.amazon.com/codepipeline/latest/userguide/samples/SampleApp_Linux.zip) and [Solid State HTML5 template](https://html5up.net/solid-state). Alternatively, you can download both manually and add them to codecommit's `MyDemoRepo`
 
-The repository tree should like this:
+The repository tree should look like this:
 
 ```
 MyDemoRepo
@@ -147,7 +147,7 @@ MyDemoRepo
            └-- stop_server
 ```           
 
-AppSpec file must be a YAML-formatted file named appspec.yml and it must be placed in the root of the directory structure of an application's source code. Otherwise, deployments fail. It is used by CodeDeploy to determine:
+AppSpec file must be a YAML-formatted file named appspec.yml and it must be placed in the root of the directory structure of an application's source code, otherwise deployments fail. It is used by CodeDeploy to determine:
     - What it should install onto your instances from your application revision in Amazon S3 or GitHub.
     - Which lifecycle event hooks to run in response to deployment lifecycle events.
 
@@ -186,7 +186,7 @@ We are also going to attach an IAM role `EC2InstanceRole` to the instance (known
 1. Navigate to `EC2` > `Instances` > Click `Launch Intances`
 2. Enter Name as `MyCodePipelineDemo`
 3. Select `Amazon Linux 2 AMI1` and Instance Type `t2.micro Free tier eligible`
-4. You could create a key pair or choose Proceed without a key pair. Creating a key pair would allow to logon to the EC2 instance and check the application.
+4. You could create a key pair or choose Proceed without a key pair. Creating a key pair would allow you to logon to the EC2 instance and check the application.
 5. Select `Allow SSH traffic from My IP` and `Allow HTTP traffic from the internet`
 6. Click `Advanced Details` > Select `EC2InstanceRole` under `IAM instance profile` and enter the following in the `user data` and click `Launch Instance`
 
@@ -255,7 +255,8 @@ A deployment group is a resource that defines deployment-related settings like w
 
 ### Step 7. Create a pipeline in CodePipeline
 
-We are now ready to create and the pipeline. In this step, we create a pipeline that runs automatically when code is pushed to your CodeCommit repository.
+We are now ready to create the pipeline. 
+In this step, we create a pipeline that runs automatically when code is pushed to your CodeCommit repository.
 
 **Create a CodePipeline pipeline**
 
@@ -382,7 +383,7 @@ from: `source: /index.html` to `source: /`
 
 <a name="referrals"></a>
 ### Referrals
-- [Tutorial: Create a simple pipeline (CodeCommit repository)](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codecommit.html)
+- [Tutorial: Create a simple pipeline (CodeCommit repository)] (https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codecommit.html)
 - Cover Image by [@darya_jumelya](https://unsplash.com/@darya_jumelya) from [unsplash](https://unsplash.com/photos/eiANX2OqRFM).
 
 ---
