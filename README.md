@@ -1,6 +1,8 @@
 # Create a simple pipeline using CodeCommit repository
 
-{% embed https://www.youtube.com/watch?v=UzMdlSA1X1Q&t=4110s %}
+{% embed https://www.youtube.com/watch?v=UzMdlSA1X1Q %}
+
+![AWS-Deploying_and_Managing_Infrastructure](https://img.youtube.com/vi/UzMdlSA1X1Q/0.jpg)](https://www.youtube.com/watch?v=UzMdlSA1X1Q)
 
 ---
 
