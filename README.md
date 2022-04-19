@@ -368,16 +368,16 @@ from: `source: /index.html` to `source: /`
 
 ### Step 9. Clean Up
 
-1. Terminate `MyCodePipelineDemo` EC2 Instance
-2. Delete `MyFirstPipeline` under `Pipelines`, which will remove `Amazon CloudWatch Events rule` related to the pipeline
-3. Delete `MyDemoApplication` under `Applications`
-4. Delete `MyDemoRepo` under `CodeCommit` > `Repositories`
+1. Terminate `MyCodePipelineDemo` EC2 Instance.
+2. Delete `MyFirstPipeline` under `Pipelines`, which will remove `Amazon CloudWatch Events rule` related to the pipeline.
+3. Delete `MyDemoApplication` under `Applications`.
+4. Delete `MyDemoRepo` under `CodeCommit` > `Repositories`.
 
 ---
 
 <a name="summary"></a>
 ### Summary
-- In this demo, we learnt how easy it is to setup a simple pipeline using CodeCommit, CodeDeploy and Pipeline
+- In this demo, we learnt how easy it is to setup a simple pipeline using CodeCommit, CodeDeploy and Pipeline.
 
 ---
 
