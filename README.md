@@ -383,7 +383,7 @@ from: `source: /index.html` to `source: /`
 
 <a name="referrals"></a>
 ### Referrals
-- [Tutorial: Create a simple pipeline (CodeCommit repository)] (https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codecommit.html)
+- [Tutorial: Create a simple pipeline (CodeCommit repository)](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codecommit.html)
 - Cover Image by [@darya_jumelya](https://unsplash.com/@darya_jumelya) from [unsplash](https://unsplash.com/photos/eiANX2OqRFM).
 
 ---
