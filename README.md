@@ -372,6 +372,7 @@ from: `source: /index.html` to `source: /`
 2. Delete `MyFirstPipeline` under `Pipelines`, which will remove `Amazon CloudWatch Events rule` related to the pipeline.
 3. Delete `MyDemoApplication` under `Applications`.
 4. Delete `MyDemoRepo` under `CodeCommit` > `Repositories`.
+5. Empty and delete S3 bucket prefixed with codepipeline.
 
 ---
 
